@@ -55,8 +55,6 @@ defmodule QuickExWeb.Telemetry do
 
       # VM Metrics
       summary("vm.memory.total", unit: {:byte, :kilobyte}),
-      summary("quick.quick.creation.time"),
-      counter("quick.total_quicks", description: "Total of quicks created"),
       summary("vm.total_run_queue_lengths.total"),
       summary("vm.total_run_queue_lengths.cpu"),
       summary("vm.total_run_queue_lengths.io")
